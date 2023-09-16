@@ -1,0 +1,496 @@
+<!-- I attempted to complete this using the Solution 2 presented in class but found the fractions a challenge.
+     I decided instead to do it based on Solution 1. I paint each number by individual block
+     Painting 2: Composition with half values by Theo van Doesburg (1928)-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Painting by Numbers 2</title>
+    <style>
+        body {
+            background: grey;
+        }
+        
+        .painting-2 {
+            display: grid;
+            width: 600px;
+            height: 600px;
+            grid-template-rows: repeat(20, 1fr); /* divides blocks in the grid by a total fraction of X/20 */
+            grid-template-columns: repeat(20, 1fr);
+        }
+
+        .gray {
+            background: rgb(213, 230, 216);
+        }
+        .cream {
+            background: rgb(217, 223, 193);
+        }
+        .yellow {
+            background: rgb(223, 178, 37);
+        }
+        .blue {
+            background: rgb(4, 28, 178);
+        }
+
+        .border-left-thick {
+            border-left: 16px solid rgb(11, 11, 11)
+        }
+        .border-bottom-thick {
+            border-bottom: 16px solid rgb(11, 11, 11)
+        }
+        .border-bottom-thin {
+            border-bottom: 4px solid rgb(11, 11, 11)
+        }
+        .border-left-thin {
+            border-left: 2px solid rgb(11, 11, 11)
+        }
+        /*On the real painting, the first vertical line would be cutting at an angle between blocks. 
+        Since I had trouble finding the right command, I had a standard left border instead */
+
+    </style>
+</head>
+<body>
+    <h2>Painting 2 based on: Composition with half values by Theo van Doesburg (1928)</h2>
+    <div class="painting-2">
+        <!-- Row 1 - 20 blocks-->
+        <div class="gray"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="blue border-left-thick"></div>        
+        <div class="blue"></div>        
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>     
+            
+        <!-- Row 2 -->
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="cream border-left-thick"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="blue border-left-thick"></div>        
+        <div class="blue"></div>        
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>  
+    
+        <!-- Row 3 -->
+        <div class="gray"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="blue border-left-thick"></div>        
+        <div class="blue"></div>        
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>  
+
+        <!-- Row 4 -->
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="cream border-left-thick"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="blue border-left-thick"></div>        
+        <div class="blue"></div>        
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>  
+
+        <!-- Row 5 -->
+        <div class="gray"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="blue border-left-thick"></div>        
+        <div class="blue"></div>        
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>      
+        <div class="blue"></div>  
+
+        <!-- Row 6 -->
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="cream border-left-thick"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="blue border-left-thick border-bottom-thick"></div>        
+        <div class="blue border-bottom-thick"></div>        
+        <div class="blue border-bottom-thick"></div>      
+        <div class="blue border-bottom-thick"></div>      
+        <div class="blue border-bottom-thick"></div>      
+        <div class="blue border-bottom-thick"></div>      
+        <div class="blue border-bottom-thick"></div>      
+        <div class="blue border-bottom-thick"></div>      
+        <div class="blue border-bottom-thick"></div>      
+        <div class="blue border-bottom-thick"></div> 
+
+        <!-- Row 7 -->
+        <div class="gray"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="gray border-left-thick"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+
+        <!-- Row 8-->
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="cream border-left-thick"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="gray border-left-thick border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+
+        <!-- Row 9-->
+        <div class="gray"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="gray border-left-thick"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+
+        <!-- Row 10-->
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="cream border-left-thick"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="gray border-left-thick border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+
+        <!-- Row 11-->
+        <div class="gray"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="gray border-left-thick"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+
+        <!-- Row 12-->
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="cream border-left-thick"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="gray border-left-thick border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+
+        <!-- Row 13-->
+        <div class="gray"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="cream"></div>        
+        <div class="gray border-left-thick"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+
+        <!-- Row 14-->
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="cream border-left-thick border-bottom-thick"></div>        
+        <div class="cream border-bottom-thick"></div>        
+        <div class="cream border-bottom-thick"></div>        
+        <div class="cream border-bottom-thick"></div>        
+        <div class="cream border-bottom-thick"></div>        
+        <div class="cream border-bottom-thick"></div>        
+        <div class="gray border-left-thick border-bottom-thick"></div>
+        <div class="gray border-bottom-thick"></div>
+        <div class="gray border-bottom-thick border-left-thin"></div>
+        <div class="gray border-bottom-thick"></div>
+        <div class="gray border-bottom-thick border-left-thin"></div>
+        <div class="gray border-bottom-thick"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        
+        <!-- Row 15 -->
+        <div class="gray"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="yellow border-left-thick"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="gray border-left-thick"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+
+        <!-- Row 16 -->
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="yellow border-left-thick"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="gray border-left-thick border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+
+        <!-- Row 17 -->
+        <div class="gray"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="yellow border-left-thick"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="gray border-left-thick"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+
+        <!-- Row 18 -->
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="yellow border-left-thick"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="gray border-left-thick border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="gray border-left-thin border-bottom-thin"></div>
+        <div class="gray border-bottom-thin"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+
+        <!-- Row 19 -->
+        <div class="gray"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="yellow border-left-thick"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="gray border-left-thick"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+
+        <!-- Row 20 -->
+        <div class="gray"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="yellow border-left-thick"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="yellow"></div>        
+        <div class="gray border-left-thick"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="gray border-left-thin"></div>
+        <div class="gray"></div>
+        <div class="cream border-left-thick"></div>
+        <div class="cream"></div>
+        <div class="cream"></div>
+        <div class="cream border-bottom-thin"></div>
+
+    </div>
+</body>
+</html>
