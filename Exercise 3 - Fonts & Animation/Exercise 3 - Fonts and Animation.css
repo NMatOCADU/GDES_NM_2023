@@ -1,0 +1,77 @@
+/* Use &:hover{} to apply the elements within through it's parent*/
+
+
+.title-font {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline overline;
+    text-align: center;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(50px);
+    }
+    30% {
+        transform: translateY(200px)
+    }
+    70% {
+        transform: translateY(1400px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} 
+
+.adobe-font {
+	font-family: 'proxima-soft', thin;
+    letter-spacing: 20px;
+    text-align: left;
+
+    &:hover {
+        animation: slide-down 1s infinite;
+    }    
+}
+
+.google-font {
+    font-family: 'Hachi Maru Pop';
+    font-size: 16px;
+    text-align: center;
+
+    transition: transform 2.5s ease-out, color 2.0s ease-in;
+    
+	&:hover { 
+        transform: rotate(1440deg);
+        
+        color: aliceblue;
+    }
+}
+
+
+@font-face { /* For custom-font */
+    font-family: 'Bespoke';
+    src: url('Bespoke-CPEGWiU0VT.eot');
+    src: url('Bespoke-CPEGWiU0VT.eot?#iefix') format('embedded-opentype'),
+         url('Bespoke-CPEGWiU0VT.woff') format('woff'),
+         url('Bespoke-CPEGWiU0VT.ttf') format('truetype'),
+         url('Bespoke-CPEGWiU0VT.svg#Bespoke-CPEGWiU0VT') format('svg');
+}
+
+.custom-font { /* Made at https://www.metaflop.com/modulator */
+    font-size: 48px;
+    font-family: Bespoke;
+    text-align: right;
+
+    transition: font-size 10s ease-out, opacity 10000ms;
+
+    &:hover {
+		font-size: 24px;
+        opacity: 0.2;
+    }
+}
+
+body {
+    background: powderblue;
+}
