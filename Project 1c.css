@@ -1,0 +1,13 @@
+body {
+    background: black;
+}
+
+.moon {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: rgb(246, 241, 213);
+    position: fixed;
+    margin-left: 50%;
+    margin-right: 50%;
+}
