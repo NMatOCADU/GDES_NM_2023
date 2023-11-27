@@ -1,0 +1,15 @@
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-left: 40px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer; /*While cursor is hovering, it turns into the pointer icon. This is purely visual, as the JavaScript still allows clicking*/
+}
+
+body {
+    background: yellow;
+    margin: 40px;
+}

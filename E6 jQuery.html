@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Sketch</title>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Effects -->
+<div class="box" id="effectsBox">Click me for Effect</div>
+
+<!-- Events -->
+<button id="eventsButton">Hover me for Event</button>
+
+<!-- Manipulation -->
+<div class="box" id="manipulationBox">Click me for Manipulation</div>
+
+<script>
+    // Effects
+    $("#effectsBox").click(function () {
+        $(this).fadeOut(1000).fadeIn(1000);
+    });
+
+    // Events
+    $("#eventsButton").hover(
+        function () {
+            $(this).css("background-color", "lightgreen");
+        },
+        function () {
+            $(this).css("background-color", "blue");
+        }
+    );
+
+    // Manipulation
+    $("#manipulationBox").click(function () {
+        $(this).text("Manipulated!").css({
+            "background-color": "lightcoral",
+            "color": "white"
+        });
+    });
+</script>
+
+</body>
+</html>

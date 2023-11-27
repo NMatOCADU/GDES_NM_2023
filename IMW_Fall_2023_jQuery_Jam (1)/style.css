@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+}
+
+div {
+    transition: all 0.5s;
+}
+
+.no-width {
+    width: 0px !important;
+}
