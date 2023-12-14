@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Remember: focus on Scroll as an interaction. Lesser idea: 3 rectangles that change colour across the colour values. 
-                                                Greater idea: animate a written scroll that unfurills as user scrolls up and down, with text-->
+
 <head>
-    <title>Project 3</title>
+    <title>Project 3 - JavaScript, centred on Scroll</title>
     <meta name="description" content="For Project 3 - using Scroll in JavaScript">
     <link rel="stylesheet" href="Project 3.css">
-
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap">
+    <!--I also tried with JQuery but could not find a solution-->
 </head>
 
 <body>
-
-
-
+    <div class="total-container">
+        <div class="originalScroll"><img src="https://media.istockphoto.com/id/1336391179/vector/ancient-scroll-old-rolled-parchment-manuscript-on-papyrus-with-wooden-roll-medieval-twisted.jpg?s=612x612&w=0&k=20&c=ffbGEZGwuc_jKjPxM-gmL7ozjcgMkoEquWBrcMEzlYQ=" alt="It was hard to draw a scroll so I had to use an image; referenced in code"></div>
+        <div class="theScrollPaper">
+        <div class="text-container">
+            <div class="Text0">Here, I test out different things to place in this scroll. Continue scrolling to see more</div>
+            <div class="Text1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque lacus dolor, id ornare nibh pellentesque id.</p></div>
+            <p>Scroll and it will appear/vanish<p>
+            <div class="Text2"><p>Praesent porta faucibus purus in gravida. Aliquam volutpat ex non eros tempus, ultricies sagittis dui malesuada. Ut vel laoreet sapien, eget dictum massa. Ut quis urna eget ligula hendrerit porttitor vel a lorem. Ut semper vitae arcu ac congue. Mauris quam nunc, fringilla vitae faucibus ac, venenatis sed sapien. Ut scelerisque est at nisl sollicitudin euismod. </p></div>
+            <p>Scroll to 166%<p>
+            <div class="Text3"><p>Donec nec velit mollis, maximus augue ut, aliquam lectus. Aenean ligula risus, ultrices a venenatis ac, lacinia non turpis. Morbi maximus dapibus dignissim. Aenean venenatis dignissim dolor in iaculis. Vestibulum egestas ornare tellus quis dapibus. Nulla vestibulum eget ex in lobortis. In rhoncus vitae velit ut convallis. </p></div>
+            <p>Hover and the font changes</p>
+            <div class="Break-line"><img src="calligraphy line.png"><img></div> <!---->
+            <p>Below, the button changes the function of scroll disabled and instead replaced with a keydown function. Use W and S to move.</p>
+            <p>Originally I had trouble implementing Scroll so I experimented with keydown. I now attempt to have the controls changable by this button.</p>
+            <button class="JS-Changer">Change</button>
+        </div> 
+        </div>
+    </div>
     <script src="Project 3.js"></script>
 </body>
 

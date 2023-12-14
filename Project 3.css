@@ -1,5 +1,66 @@
-
-
 body {
-    background: turquoise;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 200vh; 
+    margin: 0;
+}
+
+.total-container {
+    position: fixed; 
+}
+
+.theScrollPaper {
+    position: absolute;
+    top: 52%;
+    left: 20%;
+    width: 60%;
+    height: 0%; /* Initial at 0, an unfurled scroll */
+    background-color: rgba(243, 195, 138, 1);
+    transform-origin: top;
+    overflow: hidden; 
+}
+
+.text-container {
+    padding: 10px; 
+    box-sizing: border-box; 
+    transition: height 0.1s ease-out; 
+    text-align: center;
+}
+
+.originalScroll {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Break-line img {
+    max-width: 100%; 
+    height: auto;
+    margin-top: 20px;
+}
+
+.Text1 {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.Text2 {
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+    transform: translateY(50px); /* Initial position, below the visible area */
+}
+
+.Text3:hover {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.JS-Changer {
+padding: 20px 140px; 
+font-size: 16px; 
+background-color: white; 
+color: purple; 
+border-color: black; 
+cursor:help ; 
+margin-top: 10px;
 }

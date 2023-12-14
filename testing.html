@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test for index</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        body {
+            background: lightblue;
+            font-family: 'Press Start 2P';
+            font-weight: 600;
+            font-style: normal;
+            margin: 20px;
+            color: #00ff00;
+            text-decoration: none;
+        }
+
+        h1, h2, p {
+            margin: 10px;
+        }
+
+        .game-menu {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #1f1f1f;
+            border: 3px solid #00ff00;
+            padding: 20px;
+            border-radius: 10px;
+            width: 70vw;
+            max-width: 600px;
+        }
+
+        .game-menu h1, .game-menu h2, a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+
+        .game-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .Click-buttons {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green background color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .Click-buttons:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="game-menu">
+        <section class="Start-menu">
+            <h1>Welcome to my Index: Collection of Works</h1>
+            <p><a class="Click-buttons" href="#">Click here</a></p>
+        </section>
+
+        <!--Have a small space between the text in h1-->
+
+        <section class="Categ">
+            <h1>Choose a category</h1>
+            <h3 class="Click-buttons" id="extraSourcesButton">Extra Sources</h3>
+            <h3 class="Click-buttons" id="ReadingResponsesButton">Reading Responses</h3>
+            <h3 class="Click-buttons" id="ExercisesButton">Exercises</h3>
+            <h3 class="Click-buttons" id="ProjectsButton">Projects</h3>
+        </section>
+
+        <section class="Xresources">
+            <h2>Extra Sources</h2>
+            <p><a class="Click-buttons" href="../../shapes.html">Drawing with CSS examples</a></p>
+            <p><a class="Click-buttons" href="#">Insert possible source here</a></p>
+            <p><a class="Click-buttons" href="#">Insert possible source here</a></p>
+            <p><a class="Click-buttons" href="#">Insert possible source here</a></p>
+            <p><a class="Click-buttons" href="#">Insert possible source here</a></p>
+        </section>
+        <section class="RR">
+            <h2>Reading Responses</h2>
+            <p><a class="Click-buttons" href="#">Reading Response1</a></p>
+            <p><a class="Click-buttons" href="#">Reading Response2</a></p>
+            <p><a class="Click-buttons" href="#">Reading Response3</a></p>
+            <p><a class="Click-buttons" href="#">Reading Response4</a></p>
+        </section>
+        <section class="Ex">
+            <h2>Exercises</h2>
+            <p><a class="Click-buttons" href="Exercise 2 - Grid/Exercise 2 - Grid: Paint By Numbers.html">Exercise 2 - Grid: Draw by Numbers</a></p>
+            <p><a class="Click-buttons" href="Exercise 3 - Fonts & Animation/Exercise 3 - Fonts and Animation.html">Exercise 3 - Fonts and Animation</a></p>
+            <p><a class="Click-buttons" href="Exercise 4/Exercise 4.html">Exercise 4 - Flexbox</a></p>
+            <p><a class="Click-buttons" href="Exercise 5/Exercise 5.html">Exercise 5 - Javascript</a></p>
+            <p><a class="Click-buttons" href="Exercise 6 /Exercise 6.html">Exercise 6 - JQuery</a></p>
+            <p><a class="Click-buttons" href="Exercise 7/Exercise 7.html">Exercise 7 - Responsiveness</a></p>
+        </section>
+        <section class="Proj">
+            <h2>Projects</h2>
+            <p><a class="Click-buttons" href="Project 1.html">Project 1 - Storybook</a></p>
+            <p><a class="Click-buttons" href="Project 2.html">Project 2 - Poster</a></p>
+            <p><a class="Click-buttons" href="Project 3.html">Project 3 - Interaction</a></p>
+        </section>
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    function showPopup() {
+        alert("Welcome to the site. To begin, choose your settings");
+    }
+
+    // Get the elements
+    var startMenu = document.querySelector(".Start-menu");
+    var categSection = document.querySelector(".Categ");
+    var xresourcesSection = document.querySelector(".Xresources");
+    var rrSection = document.querySelector(".RR");
+    var exSection = document.querySelector(".Ex");
+    var projSection = document.querySelector(".Proj");
+
+    // Keep track of the previously pressed button
+    var previousSection = null;
+
+    // Hide all sections except Start-menu initially
+    hideSections([categSection, xresourcesSection, rrSection, exSection, projSection]);
+
+    // Add click event listener to "Click here" link
+    var clickHereLink = document.querySelector(".Start-menu a.Click-buttons");
+    clickHereLink.addEventListener("click", function () {
+        toggleSection(startMenu, categSection);
+    });
+
+    // Add click event listener to "Extra Sources" button
+    var extraSourcesButton = document.getElementById("extraSourcesButton");
+    extraSourcesButton.addEventListener("click", function () {
+        toggleSection(categSection, xresourcesSection);
+    });
+
+    // Add click event listener to "Reading Responses" button
+    var readingResponsesButton = document.getElementById("ReadingResponsesButton");
+    readingResponsesButton.addEventListener("click", function () {
+        toggleSection(categSection, rrSection);
+    });
+
+    // Add click event listener to "Exercises" button
+    var exercisesButton = document.getElementById("ExercisesButton");
+    exercisesButton.addEventListener("click", function () {
+        toggleSection(categSection, exSection);
+    });
+
+    // Add click event listener to "Projects" button
+    var projectsButton = document.getElementById("ProjectsButton");
+    projectsButton.addEventListener("click", function () {
+        toggleSection(categSection, projSection);
+    });
+
+    // Add click event listeners to category links
+    document.querySelectorAll(".Categ h3").forEach(function (category) {
+        category.addEventListener("click", function () {
+            var categoryClassName = category.textContent.replace(/\s+/g, '');
+            toggleSection(categSection, document.querySelector("." + categoryClassName));
+        });
+    });
+
+    // Add click event listener to "GoBack" buttons
+    document.querySelectorAll(".GoBack-button").forEach(function (goBackButton) {
+        goBackButton.addEventListener("click", function () {
+            toggleSection(previousSection, categSection);
+        });
+    });
+
+    // Function to toggle between hiding and showing sections with fold effect
+    function toggleSection(hideSection, showSection) {
+        hideSectionWithFold(hideSection, function () {
+            showSectionWithFold(showSection);
+        });
+    }
+
+    // Function to hide a section with fold effect
+    function hideSectionWithFold(section, callback) {
+        $(section).animate({ height: 0 }, 500, function () {
+            section.style.display = "none";
+            if (callback) {
+                callback();
+            }
+        });
+    }
+
+    // Function to show a section with fold effect
+    function showSectionWithFold(section) {
+        section.style.display = "block";
+        section.style.height = 0; // Set initial height to 0
+        $(section).animate({ height: section.scrollHeight }, 500);
+    }
+
+    // Function to hide multiple sections
+    function hideSections(sections) {
+        sections.forEach(function (section) {
+            section.style.display = "none";
+        });
+    }
+
+    // Function to show the modal
+    function showPopup() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'block';
+    }
+
+    // Function to change the CSS body background color
+    function changeBackgroundColor(color) {
+        document.body.style.backgroundColor = color;
+    }
+
+    // Call the showPopup function
+    showPopup();
+});
+
+
+
+                // Function to show the modal
+                function showPopup() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'block';
+        }
+
+        // Function to change the CSS body background color
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+                </body>
+
+</html>
