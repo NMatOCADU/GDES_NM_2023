@@ -2,47 +2,65 @@
 <html>
 
 <head>
-    <title>Homepage: Index</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Test for index</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> <!--Extra couple JQuery to use Resize function-->
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <h1>Welcome to my Index: Collection of Works</h1>
-    <h1>Currently working on a seporate file temporarily</h1>
+    <div id="options">
+        <h1>Options</h1>
+        <a class="Click-buttons" id="ChangeTheme">Toggle Theme</a>
+        <a class="Click-buttons" id="ChangeFont">Toggle Font</a>
+        <a class="Click-buttons" id="ChangeWidth">Toggle Width</a>
+        <a class="Click-buttons" id="IncreaseFontSize">Increase Font Size</a>
+        <a class="Click-buttons" id="DecreaseFontSize">Decrease Font Size</a>
+        </div>
+    <div class="game-menu ui-widget-content"> <!--Contains all effected by resize-->
+        <div class="game-menu">
+            <section class="Start-menu">
+                <h1>Welcome to my Index: Collection of Works</h1>
+                <p><a class="Click-buttons" href="#">Click here</a></p>
+            </section>
 
-    <section class="Xresources">
-        <h2>Extra Sources</h2>
-        <p><a href="../../shapes.html">Drawing with CSS examples</a></p>
-        <p><a href="">Insert possible source here</a></p>
-        <p><a href="">Insert possible source here</a></p>
-        <p><a href="">Insert possible source here</a></p>
-        <p><a href="">Insert possible source here</a></p>
-    </section>
-    <section class="RR">
-        <h2>Reading Responses</h2>
-        <p><a href="">Reading Response1</a></p>
-        <p><a href="">Reading Response2</a></p>
-        <p><a href="">Reading Response3</a></p>
-        <p><a href="">Reading Response4</a></p>
-    </section>
-    <section class="Ex">
-        <h2>Exercises</h2>
-        <p><a href="Exercise 2 - Grid/Exercise 2 - Grid: Paint By Numbers.html">Exercise 2 - Grid: Draw by Numbers</a></p>
-        <p><a href="Exercise 3 - Fonts & Animation/Exercise 3 - Fonts and Animation.html">Exercise 3 - Fonts and Animation</a></p>
-        <p><a href="Exercise 4/Exercise 4.html">Exercise 4 - Flexbox</a></p>
-        <p><a href="Exercise 5/Exercise 5.html">Exercise 5 - Javascript</a></p>
-        <p><a href="Exercise 6 /Exercise 6.html">Exercise 6 - JQuery</a></p>
-        <p><a href="Exercise 7/Exercise 7.html">Exercise 7 - Responsiveness</a></p>
-    </section>
-    <section class="Proj">
-        <h2>Projects</h2>
-        <p><a href="Project 1.html">Project 1 - Storybook</a></p>
-        <p><a href="Project 2.html">Project 2 - Poster</a></p>
-        <p><a href="Project 3.html">Project 3 - Interaction</a></p>
-    </section>
+            <!--Have a small space between the text in h1-->
 
+            <section class="Categ">
+                <h1>Choose a category</h1>
+                <h3 class="Click-buttons" id="extraSourcesButton">Extra Sources</h3>
+                <h3 class="Click-buttons" id="ExercisesButton">Exercises</h3>
+                <h3 class="Click-buttons" id="ProjectsButton">Projects</h3>
+            </section>
+
+            <section class="Xresources">
+                <h2>Extra Sources</h2>
+                <p><a class="Click-buttons" href="../../shapes.html">Drawing with CSS examples</a></p>
+                <p><a class="Click-buttons" href="#">Insert possible source here</a></p>
+            </section>
+            <section class="Ex">
+                <h2>Exercises</h2>
+                <p><a class="Click-buttons" href="Exercise 2 - Grid/Exercise 2 - Grid: Paint By Numbers.html">Exercise 2 - Grid: Draw by Numbers</a></p>
+                <p><a class="Click-buttons" href="Exercise 3 - Fonts & Animation/Exercise 3 - Fonts and Animation.html">Exercise 3 - Fonts and Animation</a></p>
+                <p><a class="Click-buttons" href="Exercise 4/Exercise 4.html">Exercise 4 - Flexbox</a></p>
+                <p><a class="Click-buttons" href="Exercise 5/Exercise 5.html">Exercise 5 - Javascript</a></p>
+                <p><a class="Click-buttons" href="Exercise 6 /Exercise 6.html">Exercise 6 - JQuery</a></p>
+                <p><a class="Click-buttons" href="Exercise 7/Exercise 7.html">Exercise 7 - Responsiveness</a></p>
+            </section>
+            <section class="Proj">
+                <h2>Projects</h2>
+                <p><a class="Click-buttons" href="Project 1.html">Project 1 - Storybook</a></p>
+                <p><a class="Click-buttons" href="Project 2.html">Project 2 - Poster</a></p>
+                <p><a class="Click-buttons" href="Project 3.html">Project 3 - Interaction</a></p>
+            </section>
+        </div>
+    </div>
     <script src="index.js"></script>
-</body>
-</html>
+    </body>
 
+</html>

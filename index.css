@@ -1,3 +1,86 @@
+
 body {
     background: lightblue;
+    font-family: 'Press Start 2P';
+    font-weight: 600;
+    font-style: normal;
+    margin: 20px;
+    color: #00ff00;
+    text-decoration: none;
+    text-align: center;
+}
+
+.option-invert {
+    background: #00ff00;
+    color: lightblue;
+}
+
+.option-invert #options {
+    border: 3px solid lightblue;
+}
+
+.option-invert .game-menu {
+    border: 3px solid lightblue;
+}
+
+.option-font {
+    font-family: "Comic Sans MS", serif;
+}
+
+.option-width .game-menu {
+    width: 90vw;
+    max-width: none;
+}
+
+#options {
+    background-color: #1f1f1f;
+    border: 3px solid #00ff00;
+    padding: 10px;
+}
+
+h1, h2, p {
+    margin: 10px;
+}
+h1, h2, h3, p, a {
+    font-size: 1em; /* Set the initial font size for text changes */
+}
+
+.game-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1f1f1f;
+    border: 3px solid #00ff00;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70vw;
+    max-width: 600px;
+}
+
+.game-menu h1, .game-menu h2, a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.game-menu a:hover {
+    text-decoration: underline;
+}
+
+.Click-buttons {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white !important; /* I had an issue where all buttons except in Categ where a dark-dark green. On my search why, I stumbled on "!important", which I believe prioritizes */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.Click-buttons:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
